@@ -1,4 +1,4 @@
-package com.mostafa.imani.divar.ui.theme
+package com.mostafa.imani.divar.app.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
