@@ -12,17 +12,23 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.mostafa.imani.divar.app.navigation.DivarNavgraph
 import com.mostafa.imani.divar.app.ui.theme.DivarTheme
+import com.mostafa.imani.divar.data.source.network.place.PlaceNetworkDataSource
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.runBlocking
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContent {
             DivarTheme {
                 DivarNavgraph()
             }
         }
+
     }
 }
 
